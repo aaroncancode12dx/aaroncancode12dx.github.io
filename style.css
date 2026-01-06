@@ -1,0 +1,611 @@
+:root{
+    /*SPACING*/  --spacing-sml : 8px;
+    --spacing-md:16px;
+    --spacing-lg : 32px;
+    --spacing-xl:64px;
+    /*COLOUR*/
+    --btn-color:orange;
+    --text-dark:#000000;
+    --text-white:#ffffff;
+    /*FONTS*/
+    --hero-text: 'Inter';
+    --first-text: 'Nunito';
+    --size-sml:1rem;
+    --size-md:11.5rem;
+    --light-text:'Pacifico';
+}
+
+/* /*VARIABLES */
+.primary-btn{
+    padding: var(--spacing-sml) var(--spacing-md);
+    background-color: transparent;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    font-size: 15px;
+    font-weight: 400;
+}
+.primary-btn:hover{
+    color: var(--text-dark);
+    background-color: var(--text-white);
+}
+.hero-btn{
+    padding: var(--spacing-sml) var(--spacing-md);
+    background-color: var(--text-white);
+    border: 1px solid var(--text-white);
+    color: var(--text-dark);
+    font-size: 15px;
+    font-weight: 600;  
+}
+.secondary-btn{
+    color: var(--text-white);
+    padding: var(--spacing-md) var(--spacing-md);
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    width: 50%;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: var(--hero-text);
+}
+
+.hero{
+    background: url(asset/pennidrop01.png);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sml) var(--spacing-md);
+   
+}
+.hero a{
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 25px;
+     margin: var(--spacing-md) var(--spacing-md);
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+     width: 100%;
+}
+.hero-content .two-column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-family: var(--hero-text);
+    color: var(--text-white);
+    justify-content: space-between;
+    margin: 160px var(--spacing-md) 0 var(--spacing-md);
+}
+.column-left{
+display:flex ;
+align-items: center;
+justify-content: center;
+width: 20%;
+padding:0  var(--spacing-md) 0 0;
+}
+.column-left p{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 40%;
+    padding: 0 var(--spacing-md);
+}
+.column-center h1{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.column-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 20%;
+    padding: 0 var(--spacing-md);
+}
+.column-right p{
+    font-size: 12px;
+}
+
+.founder-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    margin: 90px 0;
+}
+.founder-info{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+.founder-info span{
+    font-size: 40px;
+    padding: 5px 0;
+    font-family: var(--first-text);
+    font-weight: 500;
+}
+.founder-info p{
+    font-size: 15px;
+    font-family: var(--first-text);
+    color: grey;
+    text-transform: capitalize;
+    margin: 0;
+    /* margin: var(--spacing-sml) 0 var(--spacing-xl)  0; */
+}
+
+.sub-hero{
+    margin:var(--spacing-xl) 0;
+}
+.build-section{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.build-info{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+ .build-info .sub{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--text-white);
+    font-family: var(--hero-text);
+    font-weight: 500;
+    padding: 80px 0 var(--spacing-lg) 0;
+ }
+ .build-info h3{
+    color: var(--text-white);
+    text-transform: capitalize;
+    margin:  0;
+    font-size: 35px;
+    font-family: var(--first-text);
+    font-weight: 500;
+ }
+ .build-info p{
+color: var(--text-white);
+font-family: var(--first-text);
+margin: 0;
+ }
+ .build-info .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing-md) 0;
+ }
+ 
+ .build-info span{
+    color: var(--text-white);
+    font-size: 20px;
+    border: 1px solid var(--text-white);
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+ }
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: var(--spacing-xl) 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-white);
+    width: 50%;
+    padding: 0 var(--spacing-lg);
+    border-left: 1px solid var(--text-white);
+}
+.card h4{
+    margin: var(--spacing-md) 0 0 0;
+    font-family: var(--hero-text);
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.card p{
+    font-size: 12px;
+    margin: var(--spacing-md) 0;
+}
+.serve-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-lg) 0;
+    width: 100%;
+}
+.serve-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 50%;
+}
+.serve-section .sup{
+     text-transform: uppercase;
+    font-size: 14px;
+    color: var(--text-dark);
+    font-family: var(--hero-text);
+    font-weight: 500;
+    padding: 80px 0 var(--spacing-lg) 0;
+}
+.serve-info .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-md) 0;
+}
+.serve-info h3{
+margin: 0;
+font-family: var(--first-text);
+font-size: 35px;
+font-weight: 300;
+}
+.serve-info p{
+    margin: 0;
+    font-size: 14px;
+}
+/* .card-grid{
+    margin: var(--spacing-md) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+ .pic-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ } */
+
+ .card-grid{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+ }
+ .picard{
+   position: absolute;
+    width: 100%;
+ }
+ .pi-card .overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+     position: relative;
+     bottom: 110px;
+    width: 70%;
+    color: var(--text-white);
+    margin:0  0 0 var(--spacing-md) ;
+ }
+ .overlay span{
+    text-transform: uppercase;
+    font-family: var(--hero-text);
+    font-weight: 500;
+    font-size: 15px;
+ }
+.overlay p{
+    font-size: 12px;
+    font-family: var(--first-text);
+}
+.connection-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--spacing-lg) var(--spacing-lg);
+}
+.two-column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content:space-between ; */
+    width: 100%;
+}
+.column-one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin: 0 var(--spacing-xl) 0 0  ;
+}
+.column-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0  0 0 200px;
+    overflow: hidden;
+    position: relative;
+}
+.column-two::before,
+.column-two::after{
+position: absolute;
+width: 200px;
+width: 250%;
+height: 100%;
+content: "";
+z-index: 2;
+}
+.column-two::before{
+    top: 0;
+background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+}
+.column-two::after{
+    bottom: 0;
+background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+}
+.column-one h4{
+font-size: 15px;
+font-family: var(--first-text);
+font-weight: 400;
+text-transform: uppercase;
+}
+.column-one p{
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: var(--hero-text);
+    font-weight: 300;
+}
+.logo-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    animation: 12s slide infinite linear;
+}
+@keyframes slide{
+    from{
+        transform: translateY(0);
+    }
+    to{
+         transform: translateY(-100%);
+    }
+}
+.work-section{
+    background: url(asset/pennidrop07.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.work-section .top{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+color: var(--text-white);
+width: 15%;
+padding: var(--spacing-md)  var(--spacing-md) 0 0;
+margin: 0 var(--spacing-lg);
+}
+.top h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--first-text);
+}
+
+.work-section .bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 20%;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.work-section p{
+    color: var(--text-white);
+    font-size: 13px;
+    font-family: var(--hero-text);
+}
+.benefit-session{
+    margin: var(--spacing-xl) 0;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.columns-two{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.column-first{
+    display: flex;
+    flex-direction: column;
+    margin: 0   var(--spacing-md) 0 var(--spacing-lg) ;
+}
+
+.column-second{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 var(--spacing-md)  ;
+}
+.benefit-session h4{
+    font-family: var(--hero-text);
+    font-size: 20px;
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid grey;
+}
+.simp-two-column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.simp-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 var(--spacing-md) 0 0;
+}
+.simp-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+      margin: 0 0 0 var(--spacing-md) ;
+}
+.benefit-session .cards p{
+    font-family: var(--first-text);
+    font-size: 14px;
+}
+.benefit-session .cards h5{
+    font-family: var(--first-text);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.control-section{
+    background: url(asset/pennidrop09.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  margin: var(--spacing-lg) 0;
+}
+.control-content{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin: var(--spacing-xl) 0 0 var(--spacing-md); */
+    color: var(--text-white);
+    position: absolute;
+    top: 120px;
+    left: 145px;
+}
+.control-content h4{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: var(--hero-text);
+    margin: 0;
+    font-weight: 600;
+}
+.control-content p{
+font-size: 14px;
+font-family: var(--hero-text);
+padding: var(--spacing-md) 0;
+}
+.footer{
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.footer-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+white-space: nowrap;
+    overflow: hidden;
+}
+.slider{
+    white-space: nowrap;
+    overflow: hidden;
+     animation: 5s pennidrop infinite linear;
+     position: relative;
+}
+.footer .footer-slide p{
+    color: rgba(128, 128, 128, 0.603);
+    font-size: 180px;
+    letter-spacing: 10px;
+    font-family: var(--light-text);
+    font-weight: 100;
+}
+.footer-slide::before,
+.footer-slide::after{
+ position: absolute;
+    top: 0;
+    
+    width: 250px;
+     content: "";
+    height: 100%;
+     z-index: 2;
+}
+.footer-slide::before{
+   left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0));
+   
+}
+.footer-slide::after{
+   right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0));
+   
+}
+.footer .socials{
+    margin: var(--spacing-lg) var(--spacing-md);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .left a{
+    padding: 0 var(--spacing-sml);
+}
+
+@keyframes pennidrop{
+from{
+transform: translateX(0);
+}
+to{
+transform: translateX(-100%);
+}
+}
+.small-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-white);
+    margin: var(--spacing-lg) var(--spacing-lg);
+}
+.small-footer a{
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 40px;
+    font-family: var(--hero-text);
+}
+.small-footer p{
+    text-transform: capitalize;
+    font-size: 12px;
+}
